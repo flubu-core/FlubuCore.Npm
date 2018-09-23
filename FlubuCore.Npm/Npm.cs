@@ -53,5 +53,16 @@ namespace FlubuCore.Npm
         {
             return new NpmUpdateTask();
         }
+
+        /// <summary>
+        /// This command runs the npm build command on the matched folders.
+        /// This is useful when you install a new version of node, and must recompile all your C++ addons with the new binary.
+        /// </summary>
+        /// <param name="packages">packages to rebuild.</param>
+        /// <returns></returns>
+        public NpmRebuildTask Rebuild(params string[] packages)
+        {
+            return new NpmRebuildTask(packages);
+        }
     }
 }
