@@ -15,6 +15,7 @@ namespace FlubuCore.Npm
         /// <param name="command"></param>
         public NpmPublishTask()
         {
+            ExecutablePath = "npm";
             WithArguments("publish");
         }
 
