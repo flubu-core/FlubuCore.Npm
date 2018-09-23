@@ -2,3 +2,9 @@
 FlubuCore.Npm/obj/FlubuCore.Npm.csproj.nuget.cache
 FlubuCore.Npm/obj/
 FlubuCore.Npm/bin/
+FlubuCore.Npm.Tests/obj/
+BuildScript/obj/
+BuildScript/bin/
+FlubuCore.Npm.Tests/bin/
+output/
+bin/

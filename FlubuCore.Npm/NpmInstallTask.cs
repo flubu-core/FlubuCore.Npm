@@ -17,7 +17,7 @@ namespace FlubuCore.Npm
             WithArguments("install");
         }
 
-        public NpmInstallTask Packages(string package)
+        public NpmInstallTask AddPackage(string package)
         {
             _packages.Add(package);
             return this;
