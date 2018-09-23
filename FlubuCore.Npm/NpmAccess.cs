@@ -4,7 +4,9 @@ using System.Text;
 
 namespace FlubuCore.Npm
 {
-    class Access
+    public enum NpmAccess
     {
+        Public,
+        Restricted
     }
 }

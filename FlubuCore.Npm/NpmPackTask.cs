@@ -12,7 +12,13 @@ namespace FlubuCore.Npm
             WithArguments("pack");
             WithArguments(source);
         }
-
+        
         protected override string Description { get; set; }
+
+        public NpmPackTask DryRun()
+        {
+            WithArguments("--dry-run");
+            return this;
+        }
     }
 }

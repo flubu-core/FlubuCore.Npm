@@ -10,14 +10,17 @@ namespace FlubuCore.Npm
         protected override string Description { get; set; }
 
         /// <summary>
-        /// Runs an arbitrary command from a package's "scripts".
+        /// This command will update all the packages listed to the latest version (specified by the tag config), respecting semver.
         /// </summary>
-        /// <param name="command"></param>
         public NpmUpdateTask()
         {
             WithArguments("update");
         }
 
+        /// <summary>
+        /// If the global (-g) flag is specified, this command will update globally installed packages.
+        /// </summary>
+        /// <returns></returns>
         public NpmUpdateTask Global()
         {
             WithArguments("-g");
