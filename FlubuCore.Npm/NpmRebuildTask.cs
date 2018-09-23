@@ -15,7 +15,8 @@ namespace FlubuCore.Npm
         /// <param name="packages"></param>
         public NpmRebuildTask(params string[] packages)
         {
-            WithArguments("run-script");
+            ExecutablePath = "npm";
+            WithArguments("rebuild");
 
             if (packages.Length > 0)
             {

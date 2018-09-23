@@ -9,6 +9,7 @@ namespace FlubuCore.Npm
     {
         public NpmPackTask(string source)
         {
+            ExecutablePath = "npm";
             WithArguments("pack");
             WithArguments(source);
         }

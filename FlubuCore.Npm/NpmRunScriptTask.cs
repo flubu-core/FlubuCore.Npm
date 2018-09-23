@@ -15,6 +15,7 @@ namespace FlubuCore.Npm
         /// <param name="command"></param>
         public NpmRunScriptTask(string command)
         {
+            ExecutablePath = "npm";
             WithArguments("run-script");
             WithArguments(command);
         }

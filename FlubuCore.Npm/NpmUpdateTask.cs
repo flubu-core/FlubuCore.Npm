@@ -14,6 +14,7 @@ namespace FlubuCore.Npm
         /// </summary>
         public NpmUpdateTask()
         {
+            ExecutablePath = "npm";
             WithArguments("update");
         }
 

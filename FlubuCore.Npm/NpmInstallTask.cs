@@ -13,7 +13,8 @@ namespace FlubuCore.Npm
         public NpmInstallTask()
         {
             _packages = new List<string>();
-            WithArguments("npm");
+
+            ExecutablePath = "npm";
             WithArguments("install");
         }
 
