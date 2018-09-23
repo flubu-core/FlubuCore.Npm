@@ -24,5 +24,15 @@ namespace FlubuCore.Npm
         {
             return new NpmRunScriptTask(command);
         }
+
+        /// <summary>
+        /// Create a tarball from a package
+        /// </summary>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public NpmPackTask Pack(string source)
+        {
+            return new NpmPackTask(source);
+        }
     }
 }
