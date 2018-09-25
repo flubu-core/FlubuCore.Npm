@@ -6,12 +6,12 @@
 
 FlubuCore.Npm is a [FlubuCore](https://github.com/flubu-core/flubu.core) plugin adds npm specific tasks.
 
-Plugin adds npm tasks to FlubuCore ``` ITaskContext ``` interface:  ``` context.Tasks().Npm() ```
+Plugin adds npm tasks to FlubuCore ``` ITaskContext ``` interface:  ``` context.Tasks().Npm().Install() ```
 
-Plugin adds Following tasks:
-* NpmInstallTask
-* NpmPackTask
-* NpmPublishTask
-* NpmRebuildTask 
-* NpmRunScriptTask
-* NpmUpdateTask
+Plugin adds tasks for Following npm CLI commands:
+* Install
+* Pack
+* Publish
+* Rebuild
+* RunScript
+* Update
