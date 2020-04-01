@@ -5,7 +5,7 @@ using FlubuCore.Tasks.Process;
 
 namespace FlubuCore.Npm
 {
-    public class NpmPackTask : ExternalProcessTaskBase<NpmPackTask>
+    public class NpmPackTask : ExternalProcessTaskBase<int, NpmPackTask>
     {
         public NpmPackTask(string source)
         {

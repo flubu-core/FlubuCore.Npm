@@ -1,4 +1,5 @@
 using System;
+using FlubuCore.Context;
 using Xunit;
 
 namespace FlubuCore.Npm.Tests

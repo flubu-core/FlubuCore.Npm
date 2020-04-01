@@ -35,7 +35,7 @@ namespace BuildScript
                 .AddCoreTask(x => x.Pack().Project("FlubuCore.Npm")
                     .NoBuild()
                     .IncludeSymbols()
-                    .OutputDirectory("../output"))
+                    .OutputDirectory("output"))
                 .Do(PublishNuGetPackage);
 
             context.CreateTarget("Rebuild")

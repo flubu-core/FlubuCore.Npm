@@ -5,7 +5,7 @@ using FlubuCore.Tasks.Process;
 
 namespace FlubuCore.Npm
 {
-    public class NpmPublishTask : ExternalProcessTaskBase<NpmPublishTask>
+    public class NpmPublishTask : ExternalProcessTaskBase<int, NpmPublishTask>
     {
         protected override string Description { get; set; }
 

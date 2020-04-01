@@ -6,7 +6,7 @@ using FlubuCore.Tasks.Process;
 
 namespace FlubuCore.Npm
 {
-    public class NpmInstallTask : ExternalProcessTaskBase<NpmInstallTask>
+    public class NpmInstallTask : ExternalProcessTaskBase<int, NpmInstallTask>
     {
         private List<string> _packages;
 
